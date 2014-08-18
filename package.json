@@ -1,0 +1,24 @@
+{
+  "author": {
+    "name": "binnng",
+    "url": "https://github.com/binnng"
+  },
+  "name": "binnng",
+  "version": "1.0.0",
+  "description": "An introduction of myself.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/binnng/binnng.git"
+  },
+  "keywords": [
+    "binnng"
+  ],
+  "author": "binnng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/binnng/binnng/issues"
+  },
+  "homepage": "https://github.com/binnng/binnng"
+}
