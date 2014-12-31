@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1">
+	<title>非正当朋友</title>
+	<style type="text/css">
+		body{
+			text-align: center
+		}
+		h1 img{
+			width: .94em;
+			margin-right: .2em;
+		}
+	</style>
+</head>
+<body>
+<h1><img src="play.png" id="play">非正当朋友</h1>
+<pre>
+慢慢 慢慢
+当爱情走到尽头
+可是 可是
+我却还是不肯放手
+
+原谅我固执
+一直原地守候
+哪怕你都听不见
+无法今世与你月下温柔
+凭什么相信天长地久
+
+非正当朋友
+没正当借口
+想要抱你在转身后
+只怕当所有谎言全部被猜透
+还能不能陪你
+
+非正当朋友
+没正当借口
+想要抱你在转身后
+只怕当所有谎言全部被猜透
+还能不能陪你
+到最后
+</pre>
+<script type="text/javascript" src="bugoo.min.js"></script>
+<script type="text/javascript">
+	var WIN = window,
+		DOC = document,
+		$ = DOC.getElementById.bind(DOC);
+
+	$("play").onclick = function() {
+		this.style.display = "none";
+		WIN["Bugoo"]({
+			media: "song.mp3",
+			loop: true
+		});
+	};
+</script>
+</body>
+</html>
