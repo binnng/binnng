@@ -126,7 +126,7 @@ mkdir demo && cd demo && yo webapp
 
 [slide]
 
-# 上代码
+# 翠花，上代码~
 
 [slide]
 
