@@ -1,0 +1,234 @@
+<!--
+    Powered By nodePPT
+    version: 0.9.0
+    site: https://github.com/ksky521/nodePPT
+-->
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>前端的工程化 - By binnng</title>
+    <link rel="stylesheet" media="all" href="./css/nodeppt2.0.css">
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="./css/phone.css">
+    <link rel="stylesheet" media="print" href="./css/pdf.css">
+    <link rel="stylesheet" href="./js/highlight/styles/monokai_sublime.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+</head>
+<body>
+<div class="slides">
+    <slides id="container">
+        <slide class="slide fill" style="background-image:url('http://www.itoobz.com/uploads/allimg/1207/1-120FF93I5.jpg')"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>前端的工程化</h1>
+<p><small>@binnng</small></p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>最初的前端开发</h1>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<p>index.html</p>
+<pre><code class="html">...
+&lt;link rel=&quot;stylesheet&quot; href=&quot;a.css&quot;/&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;b.css&quot;/&gt;
+...
+
+&lt;p class=&quot;foo&quot;&gt;Wish you happy everyday!&lt;/p&gt;
+</code></pre>
+<p>a.css</p>
+<pre><code class="css">.foo{
+    color: red;
+}
+</code></pre>
+
+</hgroup><article>
+
+<ul class="moveIn">
+<li><p style="color:red;text-align:left;background:#fff;padding:1em">Wish you happy everyday!</p></li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<h2><p style="margin-bottom: 2em">首次访问</p></h2>
+<p><img src="./images/timeline1.jpg" width="100%"></p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<h2><p style="margin-bottom: 2em">缓存后 </p></h2>
+<p><img src="./images/timeline2.jpg" width="100%"></p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>只用写HTML，JS和CSS，切图的时代</h1>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>那么问题来了？</h1>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>缓存 <del style="font-size:.8em">技术哪家强</del> 怎么更新呢？</h1>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>真相只有一个：</h1>
+<p>通过<strong>更新页面中引用的资源路径</strong>，让浏览器主动放弃缓存，加载新资源。</p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<p>index.html</p>
+<pre><code class="html">...
+&lt;link rel=&quot;stylesheet&quot; href=&quot;a.css?v=0.0.1&quot;/&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;b.css?v=0.0.1&quot;/&gt;
+...
+
+&lt;p class=&quot;foo&quot;&gt;Wish you happy everyday!&lt;/p&gt;
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>问题又来了</h1>
+<p>更新页面的时候，先更新<code>HTML</code>还是先更新<code>CSS</code>？</p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>怎么都不合适</h1>
+<ul class="moveIn">
+<li><p>如果先更新HTML</p>
+  <p>用户访问到新的HTML，但是CSS还是旧的</p></li>
+<li><p>如果先更新CSS</p>
+  <p>首次进来的用户访问到旧的HTML，但是CSS已经是新的</p></li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>真相只有一个</h1>
+<p>不能使用同名的CSS文件(<strong>非覆盖式发布</strong>)，先上线静态资源，再上线HTML</p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<p>index.html</p>
+<pre><code class="html">...
+&lt;link rel=&quot;stylesheet&quot; href=&quot;a_20141028.css&quot;/&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;b_20141028.css&quot;/&gt;
+...
+
+&lt;p class=&quot;foo&quot;&gt;Wish you happy everyday!&lt;/p&gt;
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>问题又来了</h1>
+<p>两个CSS文件，能不能合并成一个，减少网络请求呢？</p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<p>index.html</p>
+<pre><code class="html">...
+&lt;link rel=&quot;stylesheet&quot; href=&quot;ab_20141028.css&quot;/&gt;
+...
+
+&lt;p class=&quot;foo&quot;&gt;Wish you happy everyday!&lt;/p&gt;
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>问题再次来了</h1>
+<p>合并后的css文件好大，那么多空格换行，能不能压缩一下呢？</p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<p>index.html</p>
+<pre><code class="html">...
+&lt;link rel=&quot;stylesheet&quot; href=&quot;ab_20141028_min.css&quot;/&gt;
+...
+
+&lt;p class=&quot;foo&quot;&gt;Wish you happy everyday!&lt;/p&gt;
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>不再只管写HTML，CSS和JS，还要考虑性能 (ノへ￣、)</h1>
+<ul>
+<li>加戳（缓存和更新缓存）</li>
+<li>合并（减少网络请求数）</li>
+<li>压缩（减少网络数据传输）</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>绝对是个工程问题</h1>
+<p>妈妈，我再也不想干前端了。。</p>
+
+</article></section></slide>
+        <slide class="slide thank-you-slide segue nobackground">
+            <article class="flexbox vleft auto-fadein">
+                <h2>Q &amp; A</h2>
+                <h3>&lt;Thank You!&gt;</h3>
+            </article>
+        </slide>
+        <slide class="slide logoslide dark nobackground">
+            <article class="flexbox vcenter">
+              <h2 style="color: white;">Powered By nodePPT v0.9.0</h2>
+            </article>
+          </slide>
+        <div class="slideTip" id="tip"></div>
+    </slides>
+</div>
+<canvas id="drawBoard" class="draw-board" width="900" height="700"></canvas>
+<div class="progress"><span id="progress"></span></div>
+<div id="_buttons">
+    <div class="_btn-box" id="_btn-box" style="display:none;">
+        <button class="fa fa-arrow-circle-left" id="_btn-prev"></button>
+        <button class="fa fa-arrow-circle-right" id="_btn-next"></button>
+        <button class="fa fa-paint-brush" id="_btn-brush"></button>
+        <button class="fa fa-compress" id="_btn-overview" data-toggle="fa fa-expand"></button>
+    </div>
+    <button class="fa fa-bars" id="_btn-bar"  data-toggle="fa fa-close"></button>
+</div>
+<script src="./js/mixjs/lib/mix.0.3.0.min.js"></script>
+<script>
+var base = location.protocol + '//' + location.host;
+
+var path = location.pathname.split('/').filter(function(v){
+    return !!v;
+});
+path.pop();
+path = path.join('/');
+MixJS.config({
+    baseURL: [ base, path, 'js'].join('/')+'/'
+});
+
+
+MixJS.use('event/broadcast', function($){
+    $.loadJS('nodeppt.js',function(){
+        Slide.init({
+            containerID: 'container',
+            drawBoardID: 'drawBoard',
+            slideClass: '.slide',
+            buildClass: '.build',
+            progressID: 'progress',
+            transition: 'move',
+            width: 1100,
+            dir: './',
+            
+            //打开下面的注释就开启postMessage方式
+            //访问网址127.0.0.1:8080/ppt/demo#client
+            control:{
+                type: 'postMessage',
+                args:{
+                    isControl:  false
+                }
+            },
+            
+            tipID: 'tip'
+        });
+    }).loadJS('highlight/hljs-0.8.js',function(){
+        hljs.tabReplace = '  ';
+        hljs.initHighlightingOnLoad();
+    });
+});
+</script>
+
+</body>
+</html>
