@@ -6,20 +6,66 @@ transition: move
 
 # Yeoman
 
-![logo](http://yeoman.io/assets/img/yeoman-02.6442.png)
+![logo](../images/yeoman/yeoman-02.6442.png)
 
 @[binnng](https://github.com/binnng)
 
 
 [slide]
 
+## “传统”的前端开发
+
+- html
+- css
+- javascript
+
+[slide]
+
+## “现代”的前端开发
+
+- html css javascript
+- 编译 (Less, Sass)
+- 模块化 (合并)
+- 压缩
+- 缓存
+- CDN
+- ...
+
+[slide]
+
+![抓狂](../images/startle.png)
+
+[slide]
+# Yeoman
+
+
+**传统方式写代码，实现现代化部署**
+
+[slide]
+
+![yeoman](../images/yeoman/yeoman.png)
+
+[slide]
+![yeoman](../images/yeoman/yeoman-009.png)
+
+[slide]
+![yeoman](../images/yeoman/ucUfQQz.png)
+
+[slide]
+![yeoman](../images/yeoman/yeoman-004.7ff4.png)
+
+[slide]
+![爱](../images/love.png)
+
+[slide]
+
 ### 前端开发 **脚手架**（工程模板）
-<img src="http://yeoman.io/assets/img/illustration-home-inverted.b715.png" width="600" style="margin-top:2em">
+<img src="../images/yeoman/illustration-home-inverted.b715.png" width="600" style="margin-top:2em">
 
 [slide]
 
 # Yo
-![yo](http://yeoman.io/assets/img/tool-yo.5015.png)
+![yo](../images/yeoman/tool-yo.5015.png)
 
 工程的支架，起`Node Server`，协调各组件等。
 
@@ -27,7 +73,7 @@ transition: move
 [slide]
 # Grunt 【重要】
 
-![Grunt](http://yeoman.io/assets/img/tool-grunt.af56.png)
+![Grunt](../images/yeoman/tool-grunt.af56.png)
 
 <p style="text-align:left">前端**任务构建工具**，包含：</p>
 
@@ -41,7 +87,7 @@ transition: move
 [slide]
 # Bower
 
-![Bower](http://yeoman.io/assets/img/tool-bower.db00.png)
+![Bower](../images/yeoman/tool-bower.db00.png)
 
 <p style="text-align:left">前端**包管理工具**。</p>
 
