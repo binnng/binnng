@@ -10,6 +10,8 @@ transition: move
 
 @[binnng](https://github.com/binnng)
 
+<p style="font-size:.6em;margin-top:.4em;">2015.01.09</p>
+
 
 [slide]
 
@@ -24,7 +26,7 @@ transition: move
 ## “现代”的前端开发
 
 - html css javascript
-- 编译 (Less, Sass)
+- 编译 (Less, Sass, Coffee...)
 - 模块化 (合并)
 - 压缩
 - 缓存
@@ -59,7 +61,7 @@ transition: move
 
 [slide]
 
-### 前端开发 **脚手架**（工程模板）
+### **脚手架**（工程模板）
 <img src="../images/yeoman/illustration-home-inverted.b715.png" width="600" style="margin-top:2em">
 
 [slide]
@@ -67,16 +69,17 @@ transition: move
 # Yo
 ![yo](../images/yeoman/tool-yo.5015.png)
 
-工程的支架，起`Node Server`，协调各组件等。
+工程支架，协调各组件等。
 
 
 [slide]
-# Grunt 【重要】
+# Grunt
 
 ![Grunt](../images/yeoman/tool-grunt.af56.png)
 
 <p style="text-align:left">前端**任务构建工具**，包含：</p>
 
+- 起`Node Server`
 - 编译 | 合并 | 压缩
 - 文件名加戳 | 文件内容替换
 - ...
