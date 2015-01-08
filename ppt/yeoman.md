@@ -44,14 +44,13 @@ transition: move
 **传统方式写代码，实现现代化部署**
 
 [slide]
-
 ![yeoman](../images/yeoman/yeoman.png)
 
 [slide]
 ![yeoman](../images/yeoman/yeoman-009.png)
 
 [slide]
-![yeoman](../images/yeoman/ucUfQQz.png)
+![yeoman](../images/yeoman/yeoman-005.2b00.png)
 
 [slide]
 ![yeoman](../images/yeoman/yeoman-004.7ff4.png)
