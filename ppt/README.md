@@ -1,4 +1,8 @@
-ppt
-===
+title: README
+speaker: binnng
+transition: move
 
-我的一些分享PPT
+[slide]
+# 我的一些分享PPT
+
+[http://binnng.github.io/binnng/ppt/publish/](http://binnng.github.io/binnng/ppt/publish/)
