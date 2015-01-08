@@ -132,8 +132,6 @@ mkdir demo && cd demo && yo webapp
 
 [slide]
 
-# 一些资料
-
 
 [Yeoman](http://yeoman.io) 
 <br>
