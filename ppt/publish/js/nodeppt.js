@@ -797,14 +797,6 @@
 
     $win.Slide = Slide;
 
-    var elViewportMeta = $doc.createElement("meta");
-    var elHead = $("head")[0];
-    elViewportMeta.setAttribute("name", "viewport");
-    elViewportMeta.setAttribute("content", "width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1");
-
-    //elHead.appendChild(elViewportMeta);
-    
-
 }(window, document, MixJS.event.broadcast, MixJS.loadJS, MixJS.loadCSS));
 
 
