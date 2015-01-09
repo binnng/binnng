@@ -3,6 +3,10 @@ speaker: binnng
 transition: move
 
 [slide]
+![superman](../images/s.png)
+
+
+[slide]
 
 # Yeoman
 
