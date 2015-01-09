@@ -40,8 +40,9 @@ transition: move
 [slide]
 # Yeoman
 
-
-**传统方式写代码，实现现代化部署**
+- 前端工作流
+- 传统方式写代码，实现现代化部署
+- 享受编程乐趣
 
 [slide]
 ![yeoman](../images/yeoman/yeoman.png)
@@ -68,7 +69,7 @@ transition: move
 # Yo
 ![yo](../images/yeoman/tool-yo.5015.png)
 
-工程支架，协调各组件等。
+工程支架，协调各组件
 
 
 [slide]
@@ -109,8 +110,14 @@ transition: move
 - generator-require
 - ...
 
-不同的模板
-每个`generator`都是npm模块
+<p style="margin-bottom:1em">不同的工程模板</p>
+
+
+```
+npm install generator-webapp
+yo webapp
+yo angular
+```
 
 [slide]
 
